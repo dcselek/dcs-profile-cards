@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/dcs-profile-cards.svg)](https://www.npmjs.com/package/dcs-profile-cards) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[![](https://i.gyazo.com/9ca97431972fa5596035de857fe7390b.gif)](https://gyazo.com/9ca97431972fa5596035de857fe7390b)
+
 ## Install
 
 ```bash
