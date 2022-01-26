@@ -12,15 +12,41 @@ npm install --save dcs-profile-cards
 
 ## Usage
 
+For Big Profile Cards:
+
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'dcs-profile-cards'
+import { BigProfileCard } from 'dcs-profile-cards'
 import 'dcs-profile-cards/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+        <BigProfileCard name='DCSELEK' id="41" mail="dcselek@gmail.com" other="Hi! 🖖" src={avatar} alt="avatar" purple />
+        <BigProfileCard name='DCSELEK' id="41" other="Hi! 🖖" src={avatar} alt="avatar" yellow />
+        <BigProfileCard name='DCSELEK' id="41" other="Hi! 🖖" src={avatar} alt="avatar" gray />
+        <BigProfileCard name='DCSELEK' id="41" other="Hi! 🖖" src={avatar} alt="avatar" darkblue />
+    )
+  }
+}
+```
+For Small Profile Cards:
+
+```jsx
+import React, { Component } from 'react'
+
+import { SmallProfileCard } from 'dcs-profile-cards'
+import 'dcs-profile-cards/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return (
+        <SmallProfileCard name='DCSELEK' id="41" other="Hi! 🖖" src={avatar} alt="avatar" angular purple />
+        <SmallProfileCard name='DCSELEK' id="41" other="Hi! 🖖" src={avatar} alt="avatar" angular yellow />
+        <SmallProfileCard name='DCSELEK' id="41" other="Hi! 🖖" src={avatar} alt="avatar" angular gray />
+        <SmallProfileCard name='DCSELEK' id="41" other="Hi! 🖖" src={avatar} alt="avatar" angular darkblue />
+    )
   }
 }
 ```

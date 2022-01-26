@@ -1,9 +1,322 @@
-/* add css module styles here (optional) */
+@keyframes purpleBorders {
+  0% {
+    border: solid 1px rgba(137, 44, 220, 1);
+    margin: 0;
+  }
+  25% {
+    border: solid 1px rgba(137, 44, 220, 1);
+    margin: -10px;
+  }
+  50% {
+    border: solid 4px rgba(137, 44, 220, 1);
+    margin: -20px;
+  }
+  75% {
+    border: solid 1px rgba(137, 44, 220, 1);
+    margin: -10px;
+  }
+  100% {
+    border: solid 1px rgba(137, 44, 220, 1);
+    margin: 0;
+  }
+}
+@keyframes yellowBorders {
+  0% {
+    border: solid 1px #ffcc29;
+    margin: 0;
+  }
+  25% {
+    border: solid 1px #ffcc29;
+    margin: -10px;
+  }
+  50% {
+    border: solid 4px #ffcc29;
+    margin: -20px;
+  }
+  75% {
+    border: solid 1px #ffcc29;
+    margin: -10px;
+  }
+  100% {
+    border: solid 1px #ffcc29;
+    margin: 0;
+  }
+}
+@keyframes grayBorders {
+  0% {
+    border: solid 1px rgba(187, 191, 202, 0.7);
+    margin: 0;
+  }
+  25% {
+    border: solid 1px rgba(187, 191, 202, 0.7);
+    margin: -10px;
+  }
+  50% {
+    border: solid 4px rgba(187, 191, 202, 0.7);
+    margin: -20px;
+  }
+  75% {
+    border: solid 1px rgba(187, 191, 202, 0.7);
+    margin: -10px;
+  }
+  100% {
+    border: solid 1px rgba(187, 191, 202, 0.7);
+    margin: 0;
+  }
+}
+@keyframes darkblueBorders {
+  0% {
+    border: solid 1px rgba(34, 40, 49, 1);
+    margin: 0;
+  }
+  25% {
+    border: solid 1px rgba(34, 40, 49, 1);
+    margin: -10px;
+  }
+  50% {
+    border: solid 4px rgba(34, 40, 49, 1);
+    margin: -20px;
+  }
+  75% {
+    border: solid 1px rgba(34, 40, 49, 1);
+    margin: -10px;
+  }
+  100% {
+    border: solid 1px rgba(34, 40, 49, 1);
+    margin: 0;
+  }
+}
+.container {
+  width: 237px;
+  max-height: 552px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: black;
+  border: solid black 2px;
+  margin-top: 10px;
+  position: relative;
+}
+.container hr {
+  width: 75%;
+  opacity: 0.3;
+  margin-left: 10px;
+}
+.container:hover {
+  color: white;
+  transition: all 0.2s;
+}
+.container img {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  margin-left: 12px;
+  position: relative;
+  top: -30px;
+}
+.container image {
+  width: 100%;
+  height: 0;
+}
+.container h4 {
+  margin: 0;
+  margin-left: 10px;
+  margin-top: -24px;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+.container .info {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+  margin-left: 10px;
+}
+.container .info span {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.darkbg {
+  color: white;
+  border: solid #fff 2px !important;
+}
+.purple::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px rgba(137, 44, 220, 1);
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+}
+.purple:hover {
+  background-color: rgba(137, 44, 220, 1);
+  transition: background-color 0.4s ease-in;
+}
+.purple:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px rgba(137, 44, 220, 1);
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+  animation: purpleBorders 0.6s ease;
+}
+.yellow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px #ffcc29;
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+}
+.yellow:hover {
+  background-color: #ffcc29;
+  transition: all 0.3s ease-in;
+}
+.yellow:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px #ffcc29;
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+  animation: yellowBorders 0.8s ease;
+}
+.gray::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px rgba(187, 191, 202, 0.7);
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+}
+.gray:hover {
+  background-color: rgba(187, 191, 202, 0.7);
+  transition: all 0.3s ease-in;
+}
+.gray:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px rgba(187, 191, 202, 0.7);
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+  animation: grayBorders 0.8s ease;
+}
+.darkblue::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px rgba(34, 40, 49, 1);
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+}
+.darkblue:hover {
+  background-color: rgba(34, 40, 49, 1);
+  transition: all 0.3s ease-in;
+}
+.darkblue:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px rgba(137, 44, 220, 1);
+  z-index: -1;
+  transition: transform 0.6s linear;
+  transform: scale(0.97, 0.93);
+  animation: darkblueBorders 0.8s ease;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.smallContainer {
+  width: 237px;
+  height: 65px;
+  border-radius: 24px;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: black;
+  border: solid black 2px;
+}
+.smallContainer:hover {
+  color: white;
+  transition: all 0.2s;
+}
+.smallContainer .smallImage img {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-left: 12px;
+  box-shadow: 0px 1px 1px 0px rgba(20, 20, 20, 0.616);
+}
+.smallContainer .smallInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.smallContainer .smallInfo h4 {
+  margin: 0;
+}
+.smallContainer .smallInfo span {
+  font-size: 14px;
+}
+.smallDarkbg {
+  color: white;
+}
+.smallPurple:hover {
+  background-color: rgba(137, 44, 220, 1);
+  transition: all 0.2s ease-in;
+}
+.smallYellow:hover {
+  background-color: #ffcc29;
+  transition: all 0.3s ease-in;
+}
+.smallGray:hover {
+  background-color: rgba(187, 191, 202, 0.7);
+  transition: all 0.3s ease-in;
+}
+.smallDarkblue:hover {
+  background-color: rgba(34, 40, 49, 1);
+  transition: all 0.3s ease-in;
+}
+.angular{
+  border-radius: 0px;
 }
